@@ -2,13 +2,9 @@ import operator
 
 
 def solution_asc(dic):
-    '''
-    Enter your code here
-    '''
+    return sorted(dic.items(), key=operator.itemgetter(0))
+
 
 
 def solution_desc(dic):
-    '''
-    Enter your code here
-    '''
-
+    return sorted(dic.items(),key=operator.itemgetter(0),reverse=True)
